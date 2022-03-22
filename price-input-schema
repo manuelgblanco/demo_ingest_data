@@ -1,0 +1,44 @@
+{
+  "namespace" : "",
+  "name" : "prices",
+  "doc" : "",
+  "database" : "avro",
+  "type" : "record",
+
+  "fields" : [ {
+    "name" : "date",
+    "type" : [ "string" ],
+    "default" : "2016-01-01",
+    "logicalFormat": "DATE",
+    "format": "yyyy-MM-dd"
+  }, {
+    "name" : "symbol",
+    "type" : [ "string" ],
+    "default" : "XXX"
+  }, {
+    "name" : "open",
+    "type" : [ "null", "string" ],
+    "logicalFormat": "DECIMAL(38,12)",
+    "default" : null
+  }, {
+    "name" : "close",
+    "type" : [ "null", "string" ],
+    "logicalFormat": "DECIMAL(38,12)",
+    "default" : null
+  }, {
+    "name" : "low",
+    "type" : [ "null", "string" ],
+    "logicalFormat": "DECIMAL(38,12)",
+    "default" : null
+  }, {
+    "name" : "high",
+    "type" : [ "null", "string" ],
+    "logicalFormat": "DECIMAL(38,12)",
+    "default" : null
+  }, {
+    "name" : "volume",
+    "type" : [ "null", "string" ],
+    "logicalFormat": "DECIMAL(38,12)",
+    "default" : null
+  }]
+}
